@@ -5,7 +5,7 @@ import Auth from './auth.js';
 import mongo from 'mongodb';
 
 const app = express() 
-const port = 3100;
+const port = 3100 || process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
